@@ -101,5 +101,9 @@ function fish_prompt
         segment black white " %%"
     end
 
+    if set -q VIRTUAL_ENV
+        segment yellow blue " "(basename "$VIRTUAL_ENV")" "
+    end
+
     segment_close
 end
