@@ -105,5 +105,9 @@ function fish_prompt
         segment yellow blue " "(basename "$VIRTUAL_ENV")" "
     end
 
+    if set -q VAULTED_ENV
+        segment yellow blue " $VAULTED_ENV "
+    end
+
     segment_close
 end
