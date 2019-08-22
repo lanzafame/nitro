@@ -106,7 +106,13 @@ function fish_prompt
     end
 
     if set -q VAULTED_ENV
-        segment yellow blue " $VAULTED_ENV "
+        set -l vaulted_prompt "$VAULTED_ENV"
+
+        if set -q RAPTURE_ROLE
+            set -a vaulted_prompt "→ $RAPTURE_ROLE"
+        end
+
+        segment yellow blue " $vaulted_prompt "
     end
 
     segment_close
