@@ -1,7 +1,7 @@
-fisherman/segment
-fisherman/git_util
-fisherman/pwd_is_home
-fisherman/pwd_info
-fisherman/host_info
-fisherman/last_job_id
-fisherman/humanize_duration
+fishpkg/fish-git-util
+fishpkg/fish-host-info
+fishpkg/fish-humanize-duration
+fishpkg/fish-last-job-id
+fishpkg/fish-pwd-info
+fishpkg/fish-pwd-is-home
+fishpkg/fish-segment
